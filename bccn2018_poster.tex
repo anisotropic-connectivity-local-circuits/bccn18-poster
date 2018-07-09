@@ -100,66 +100,51 @@
 % The first is 75% wide and houses the title, subtitle, names, university/organization and contact information
 % The second is 25% wide and houses a logo for your university/organization or a photo of you
 % The widths of these boxes can be easily edited to accommodate your content as you see fit
-%\vspace{-6cm}
+\vspace{-7cm}
 
 %\fbox{
-\begin{minipage}[b]{0.75\linewidth}
-\vspace{-0.5cm}   
-  \veryHuge \textbf{Modelling synaptic lifetime distributions with Kesten processes} \color{Black}\\[1.5cm] 
-%\Huge\textit{}\\[2cm] % Subtitle
-  \huge \textbf{Felix Z.~Hoffmann$^{1,2}$, Stefan Rotter$^1$}\\[0.5cm] % Author(s)
-\large $\quad ^1$ Frankfurt Institute for Advanced Studies (FIAS), Johann Wolfgang Goethe University, Frankfurt am Main, Germany\\[0.2cm] % University/organization
-$\quad ^2$ International Max Planck Research School for Neural Circuits, Max Planck Institute for Brain Research, Frankfurt am Main, Germany\\[0.2cm]
-$\quad ^3$ Third Institute of Physics, Universität Göttingen, Göttingen, Germany
-\\[0.4cm]
-\end{minipage}
+\begin{minipage}[b]{0.9\linewidth}
+  \veryHuge \textbf{Nonrandom connectivity in local cortical circuits from anisotropic axon morphology} \color{Black}
+\end{minipage}\\
 %}
 %
 %\fbox{
-\begin{minipage}[b]{0.25\linewidth}
+\begin{minipage}[b]{0.5\linewidth}
+  \huge \textbf{Felix Z. Hoffmann$^{1,2}$, Stefan Rotter$^{1,3}$}\\[0.9cm] % Author(s)
+\large $\quad ^1\,$Bernstein Center Freiburg, Freiburg, Germany\\[0.2cm] % University/organization
+$\quad ^2\,$Frankfurt Institute for Advanced Studies, Frankfurt am Main, Germany\\[0.2cm]
+$\quad ^2\,$Faculty of Biology, University of Freiburg, Freiburg, Germany\\[-0.5cm]
+
+\Large \texttt{hoffmann@fias.uni-frankfurt.de}\\
+\end{minipage}
+\begin{minipage}[b]{0.5\linewidth}
   \centering
   
   %% \includegraphics[width=10cm]{goethe-logo.pdf}\\
   %% \vspace{2.8cm}
-  \vspace{-9cm}
-  
-  \includegraphics[width=11cm]{spp2041_logo.pdf}
-  \hspace{2.2cm}
-  \includegraphics[width=12.5cm]{FIAS-logo.pdf}\\
-
+  \vspace{-3cm}
+  \includegraphics[width=12cm]{spp2041_logo.pdf}\\
+  \vspace{2.2cm}
+  \includegraphics[width=13.5cm]{FIAS-logo.pdf}\\
   \vspace{2cm}
-  \Large \texttt{hoffmann@fias.uni-frankfurt.de}\\
-  \vspace{3cm}
+  
 \end{minipage}
 %}
-\vspace{-1.5cm} % A bit of extra whitespace between the header and poster content
+%\vspace{0.2cm} % A bit of extra whitespace between the header and poster content
 
 %-----------------------------------------------------------------------------
 
-\begin{multicols}{3} % This is how many columns your poster will be
+\begin{multicols}{2} % This is how many columns your poster will be
                      % broken into, a portrait poster is generally
   % split into 2 columns
   \input{sections/introduction}
   \input{sections/model}
   \input{sections/results}
-  \input{sections/network_simulations}
-  \input{sections/keypoints}                        
 
-\vspace{1.5cm}
 
-\begin{minipage}{\columnwidth}
+  
+  \printbibliography  
 
-  \section{Key points}
-
-\begin{itemize}
-\item[-] For analysis of synaptic lifetime and spine size distributions, the Kesten process model can be reduced to simpler autoregressive AR(1) process
-\item[-] Lifetime distributions in the model approximately follow a power law, while the distribution of spine sizes is lognormal-like, matching experimental findings
-\item[-] In both stochastic model and network simulations the bias in the additive changes in synaptic weight systematically shapes the lifetime and weight distributions
-\end{itemize}
-
-  \printbibliography
-  \vspace{-1.5cm}
-\end{minipage}
 \end{multicols}
 
 %% \begin{columns}
