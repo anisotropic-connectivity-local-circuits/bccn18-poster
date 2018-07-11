@@ -98,27 +98,31 @@
 %	POSTER HEADER 
 %-----------------------------------------------------------------------------
 
-% The header is divided into two boxes:
-% The first is 75% wide and houses the title, subtitle, names, university/organization and contact information
-% The second is 25% wide and houses a logo for your university/organization or a photo of you
-% The widths of these boxes can be easily edited to accommodate your content as you see fit
 \vspace{-7cm}
 
-%\fbox{
 \begin{minipage}[b]{0.9\linewidth}
-  \veryHuge \textbf{Nonrandom connectivity in local cortical circuits from anisotropic axon morphology} \color{Black}
+  \veryHuge %
+  \textbf{Nonrandom connectivity in local cortical circuits
+          from anisotropic axon morphology} \color{Black}
 \end{minipage}\\
-%}
 %
-%\fbox{
 \begin{minipage}[b]{0.5\linewidth}
-  \vspace{1.5cm}    
-  \huge \textbf{Felix Z. Hoffmann$^{1,2}$, Stefan Rotter$^{1,3}$}\\[0.9cm] % Author(s)
-\large $\quad ^1\,$Bernstein Center Freiburg, Freiburg, Germany\\[0.2cm] % University/organization
-$\quad ^2\,$Frankfurt Institute for Advanced Studies, Frankfurt am Main, Germany\\[0.2cm]
-$\quad ^2\,$Faculty of Biology, University of Freiburg, Freiburg, Germany\\[-0.5cm]
+  %       
+  \vspace{1.5cm}
+  %
+  \huge \textbf{Felix Z. Hoffmann$^{1,2}$, Stefan Rotter$^{1,3}$}\\[0.9cm] 
+  %
+  \large $\quad ^1\,$Bernstein Center Freiburg, Freiburg, Germany\\[0.2cm]
+  %
+  $\quad ^2\,$Frankfurt Institute for Advanced Studies, Frankfurt am Main,
+  Germany\\[0.2cm]
+  %
+  $\quad ^2\,$Faculty of Biology, University of Freiburg, Freiburg,
+  Germany\\[-0.5cm]
 
 \end{minipage}
+%
+%
 \begin{minipage}[b]{0.5\linewidth}
   \centering
   
@@ -136,37 +140,19 @@ $\quad ^2\,$Faculty of Biology, University of Freiburg, Freiburg, Germany\\[-0.5
     \Large \texttt{hoffmann@fias.uni-frankfurt.de} %% \hspace{2cm} \includegraphics[width=2cm]{camok.jpg}
   
 \end{minipage}
-%}
-%\vspace{0.2cm} % A bit of extra whitespace between the header and poster content
+
 
 %-----------------------------------------------------------------------------
 
-\begin{multicols}{2} % This is how many columns your poster will be
-                     % broken into, a portrait poster is generally
-  % split into 2 columns
+\begin{multicols}{2}
+
   \input{sections/introduction}
   \input{sections/model}
   \input{sections/results}
-
-
+  \input{sections/keypoints}
   
   \printbibliography  
 
 \end{multicols}
-
-%% \begin{columns}
-%%   %
-%%   \begin{column}{.5\textwidth}
-%%     \input{sections/abstract}  
-%% \input{sections/introduction}
-
-%%   \end{column}
-%%   %
-%%   \begin{column}{.5\textwidth}
-
-%%       \input{sections/results}
-%%   \end{column}
-%% \end{columns}
-
 
 \end{document}
